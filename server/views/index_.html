@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en" ng-app="app">
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <script src="./scripts/vendors/angular.js"></script>
     <script src="./scripts/vendors/angular-mocks.js"></script>
     <script src="./scripts/vendors/angular-resource.min.js"></script>
-    <script src="./scripts/vendors/angular-ui-router.min.js"></script>
+    <script src="./scripts/vendors/router.es5.js"></script>
 
     <!--<script src="scripts/pc.min.js"></script>-->
     <script src="./scripts/app.js"></script>
@@ -19,13 +19,14 @@
 </head>
 
 <body ng-controller="AppController as app">
+    <a ng-link="home">Home</a>
+    <a ng-link="page">Page</a>
 
-    <a ui-sref="home">home</a>
-    <a ui-sref="page">page</a>
-    
-    <div ui-view></div>
+    <!--<div ng-controller="HomeController as home">
+        <h1>Hello {{home.test}}! <span ng-bind="home.test"></span></h1>
+    </div>-->
 
-    <!--<div ng-viewport></div>-->
+    <div ng-viewport></div>
 
 </body>
 </html>
