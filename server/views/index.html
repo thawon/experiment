@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>My app</title>
+
+    <script src="./scripts/vendors/jquery.js"></script>
+    <script src="./scripts/vendors/angular.js"></script>
+    <script src="./scripts/vendors/angular-mocks.js"></script>
+    <script src="./scripts/vendors/angular-resource.min.js"></script>
+    <script src="./scripts/vendors/router.es5.js"></script>
+
+    <!--<script src="scripts/pc.min.js"></script>-->
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/components/home/home.js"></script>
+    <script src="./scripts/components/page/page.js"></script>
+    <script src="./scripts/services/auth-service.js"></script>
+</head>
+
+<body ng-controller="AppController as app">
+    <a ng-link="home">Home</a>
+    <a ng-link="page">Page</a>
+
+    <div id="test" ></div>
+    <!--<div ng-controller="HomeController as home">
+        <h1>Hello {{home.test}}! <span ng-bind="home.test"></span></h1>
+    </div>-->
+
+    <div ng-viewport></div>
+
+</body>
+</html>
